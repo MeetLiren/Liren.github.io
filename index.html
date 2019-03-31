@@ -459,17 +459,16 @@
 </blockquote>
 <h2 id="123：0，-231：2，-213：1，-312：2，-321：3"><a href="#123：0，-231：2，-213：1，-312：2，-321：3" class="headerlink" title="123：0， 231：2， 213：1， 312：2， 321：3     "></a>123：0， 231：2， 213：1， 312：2， 321：3     </h2><h2 id="逆序数"><a href="#逆序数" class="headerlink" title="逆序数"></a>逆序数</h2><ul>
 <li>定义： 一个排列中所有逆序的总数称为这个排列的逆序数，记为t  </li>
-<li><p>计算方法： 向前取大法<br>例1:  求排列642315的逆序数。<br>解： </p>
-<p> ||6|4|2|3|1|5|<br> |–|–|–|–|–|–|–|<br> |t|0|1|2|2|4|1|<br> 则整个排列的逆序 t=0+1+2+2+4+1=10</p>
-</li>
+<li>计算方法： 向前取大法<br>例1:  求排列642315的逆序数。<br>解： </li>
 </ul>
-<hr>
-<h2 id="二阶行列式"><a href="#二阶行列式" class="headerlink" title="二阶行列式"></a>二阶行列式</h2><p>$$<br>D=<br>\begin{vmatrix}<br>a_{11} &amp; a_{12}\<br>a_{21} &amp; a_{22}\<br>\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}<br>$$</p>
-<h2 id="三阶行列式"><a href="#三阶行列式" class="headerlink" title="三阶行列式"></a>三阶行列式</h2><p>$$<br>D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; a_{13}\<br> a_{21} &amp; a_{22} &amp; a_{23}\<br> a_{31} &amp; a_{32} &amp; a_{33}\<br>\end{vmatrix}=a_{11}a_{22}a_{33}<br>+a_{12}a_{23}a_{31}<br>+a_{13}a_{21}a_{32}<br>-a_{11}a_{23}a_{32}<br>-a_{12}a_{21}a_{33}<br>-a_{13}a_{22}a_{31}<br>$$<br>在这里提出一个对角线法则<br><img src="D:\Blog\hexo\public\images\picture1.1.jpg" alt="avatar">    </p>
+<p>$$\begin{array}{c|lcr}<br> 6 &amp; 4 &amp; 2 &amp; 3 &amp; 1 &amp; 5 \\<br>   |–|–|–|–|–|–|–| \\<br>   |t|0|1|2|2|4|1|\\</p>
+<p>\end{array}$$<br>   ||6|4|2|3|1|5|<br>   |–|–|–|–|–|–|–|<br>   |t|0|1|2|2|4|1|    </p>
+<h2 id="则整个排列的逆序-t-0-1-2-2-4-1-10"><a href="#则整个排列的逆序-t-0-1-2-2-4-1-10" class="headerlink" title="   则整个排列的逆序 t=0+1+2+2+4+1=10"></a>   则整个排列的逆序 t=0+1+2+2+4+1=10</h2><h2 id="二阶行列式"><a href="#二阶行列式" class="headerlink" title="二阶行列式"></a>二阶行列式</h2><p>$$<br>D=<br>\begin{vmatrix}<br>a_{11} &amp; a_{12}\\<br>a_{21} &amp; a_{22}\\<br>\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}<br>$$</p>
+<h2 id="三阶行列式"><a href="#三阶行列式" class="headerlink" title="三阶行列式"></a>三阶行列式</h2><p>$$<br>D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; a_{13}\\<br> a_{21} &amp; a_{22} &amp; a_{23}\\<br> a_{31} &amp; a_{32} &amp; a_{33}\\<br>\end{vmatrix}=a_{11}a_{22}a_{33}<br>+a_{12}a_{23}a_{31}<br>+a_{13}a_{21}a_{32}<br>-a_{11}a_{23}a_{32}<br>-a_{12}a_{21}a_{33}<br>-a_{13}a_{22}a_{31}<br>$$<br>在这里提出一个对角线法则<br><img src="D:\Blog\hexo\public\images\picture1.1.jpg" alt="avatar">    </p>
 <p>因此，三阶行列式也可以定义为</p>
 <p>$D=\begin{vmatrix}a_{11} &amp; a_{12} &amp; a_{13}\a_{21} &amp; a_{22} &amp; a_{23}\a_{31} &amp; a_{32} &amp; a_{33}\\end{vmatrix}=\sum(-1)^ta_{1p_{1}}a_{2p_{2}}a_{3p_{3}}$     </p>
 <p>其中t为排列 $p_{1}p_{2}p_{3}$ 的逆序数，$\sum$表示对 1，2，3 三个数的所有排列 $p_{1}p_{2}p_{3}$ 取和。</p>
-<h2 id="n阶行列式"><a href="#n阶行列式" class="headerlink" title="n阶行列式"></a>n阶行列式</h2><p>$$D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\<br>\end{vmatrix}=<br>\sum(-1)^ta_{1p_{1}}a_{2p_{2}}\cdots a_{np_{n}}<br>$$<br>t为排列 $p_{1}p_{2}\cdots p_{n}$ 的逆序数。</p>
+<h2 id="n阶行列式"><a href="#n阶行列式" class="headerlink" title="n阶行列式"></a>n阶行列式</h2><p>$$D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}=<br>\sum(-1)^ta_{1p_{1}}a_{2p_{2}}\cdots a_{np_{n}}<br>$$<br>t为排列 $p_{1}p_{2}\cdots p_{n}$ 的逆序数。</p>
 <hr>
 <h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>例2: 计算<br>$D=\begin{vmatrix}a_{11} &amp; 0      &amp; \cdots &amp; 0\0      &amp; a_{22} &amp; \cdots &amp; 0\\vdots &amp; \vdots &amp;        &amp; \vdots\0 &amp; 0 &amp; \cdots &amp; a_{nn}\end{vmatrix}$.  </p>
 <p>解: D 中可能不为零的只有一项 $(-1)^ta_{11}a_{22}\cdots a_{nn}$ ，其中 t=0 。又$a_{ii}= a_{i}(i=1,2,…,n)$ ，所以得$D=a_{11}a_{22}\cdots a_{nn}$。    </p>
