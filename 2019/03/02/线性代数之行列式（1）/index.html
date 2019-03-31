@@ -245,7 +245,7 @@
       
         <hr>
 <p>title: 线性代数之行列式（1）<br>date: 2019-03-02 20:57:50</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h1 id="线性代数–行列式"><a href="#线性代数–行列式" class="headerlink" title="线性代数–行列式"></a>线性代数–行列式</h1><p><img src="http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x" alt>})<br>这门课的笔记是由学校的朱军老师授课加上[Gilbert Strong](老师的视频为主，学堂在线的马辉老师的课后习题为辅的。主要是记录学习过程。    </p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h1 id="线性代数–行列式"><a href="#线性代数–行列式" class="headerlink" title="线性代数–行列式"></a>线性代数–行列式</h1><p>这门课的笔记是由学校的朱军老师授课加上[Gilbert Strong](老师的视频为主，学堂在线的马辉老师的课后习题为辅的。主要是记录学习过程。    </p>
 <blockquote>
 <p>提问： 一个3阶行列式有多少种排列方法，如果是n阶呢？<br> 答案<br> 6种，即123， 132， 231， 213， 312， 321<br> n!种          </p>
 </blockquote>
@@ -261,13 +261,13 @@
 <h2 id="则整个排列的逆序-t-0-1-2-2-4-1-10"><a href="#则整个排列的逆序-t-0-1-2-2-4-1-10" class="headerlink" title="   则整个排列的逆序 t=0+1+2+2+4+1=10"></a>   则整个排列的逆序 t=0+1+2+2+4+1=10</h2><h2 id="二阶行列式"><a href="#二阶行列式" class="headerlink" title="二阶行列式"></a>二阶行列式</h2><p>$$<br>D=<br>\begin{vmatrix}<br>a_{11} &amp; a_{12}\\<br>a_{21} &amp; a_{22}\\<br>\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}<br>$$</p>
 <h2 id="三阶行列式"><a href="#三阶行列式" class="headerlink" title="三阶行列式"></a>三阶行列式</h2><p>$$<br>D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; a_{13}\\<br> a_{21} &amp; a_{22} &amp; a_{23}\\<br> a_{31} &amp; a_{32} &amp; a_{33}\\<br>\end{vmatrix}=a_{11}a_{22}a_{33}<br>+a_{12}a_{23}a_{31}<br>+a_{13}a_{21}a_{32}<br>-a_{11}a_{23}a_{32}<br>-a_{12}a_{21}a_{33}<br>-a_{13}a_{22}a_{31}<br>$$<br>在这里提出一个对角线法则<br><img src="D:\Blog\hexo\public\images\picture1.1.jpg" alt="avatar">    </p>
 <p>因此，三阶行列式也可以定义为</p>
-<p>$D=\begin{vmatrix}a_{11} &amp; a_{12} &amp; a_{13}\a_{21} &amp; a_{22} &amp; a_{23}\a_{31} &amp; a_{32} &amp; a_{33}\\end{vmatrix}=\sum(-1)^ta_{1p_{1}}a_{2p_{2}}a_{3p_{3}}$     </p>
+<p>$D=\begin{vmatrix}a_{11} &amp; a_{12} &amp; a_{13}\\a_{21} &amp; a_{22} &amp; a_{23}\\a_{31} &amp; a_{32} &amp; a_{33}\\\end{vmatrix}=\sum(-1)^ta_{1p_{1}}a_{2p_{2}}a_{3p_{3}}$     </p>
 <p>其中t为排列 $p_{1}p_{2}p_{3}$ 的逆序数，$\sum$表示对 1，2，3 三个数的所有排列 $p_{1}p_{2}p_{3}$ 取和。</p>
 <h2 id="n阶行列式"><a href="#n阶行列式" class="headerlink" title="n阶行列式"></a>n阶行列式</h2><p>$$D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}=<br>\sum(-1)^ta_{1p_{1}}a_{2p_{2}}\cdots a_{np_{n}}<br>$$<br>t为排列 $p_{1}p_{2}\cdots p_{n}$ 的逆序数。</p>
 <hr>
-<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>例2: 计算<br>$D=\begin{vmatrix}a_{11} &amp; 0      &amp; \cdots &amp; 0\0      &amp; a_{22} &amp; \cdots &amp; 0\\vdots &amp; \vdots &amp;        &amp; \vdots\0 &amp; 0 &amp; \cdots &amp; a_{nn}\end{vmatrix}$.  </p>
+<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>例2: 计算<br>$D=\begin{vmatrix}a_{11} &amp; 0      &amp; \cdots &amp; 0\\0      &amp; a_{22} &amp; \cdots &amp; 0\\\vdots &amp; \vdots &amp;        &amp; \vdots\\0 &amp; 0 &amp; \cdots &amp; a_{nn}\end{vmatrix}$.  </p>
 <p>解: D 中可能不为零的只有一项 $(-1)^ta_{11}a_{22}\cdots a_{nn}$ ，其中 t=0 。又$a_{ii}= a_{i}(i=1,2,…,n)$ ，所以得$D=a_{11}a_{22}\cdots a_{nn}$。    </p>
-<p>例3: 计算$D=\begin{vmatrix}a_{11} &amp; a_{12}      &amp; \cdots &amp; a_{1n}\0      &amp; a_{22} &amp; \cdots &amp; a_{2n}\\vdots &amp; \vdots &amp;        &amp; \vdots\0 &amp; 0 &amp; \cdots &amp; a_{nn}\end{vmatrix}$（注: 此种行列式称为上三角行列式）.</p>
+<p>例3: 计算$D=\begin{vmatrix}a_{11} &amp; a_{12}      &amp; \cdots &amp; a_{1n}\\0      &amp; a_{22} &amp; \cdots &amp; a_{2n}\\\vdots &amp; \vdots &amp;        &amp; \vdots\\0 &amp; 0 &amp; \cdots &amp; a_{nn}\end{vmatrix}$（注: 此种行列式称为上三角行列式）.</p>
 <p>解: 因为从行列式中选择元素时，不能选择重复的行和列。在所有排列 $p_{1}p_{2}\cdots p_{n}$ 中，能满足上述要求并且不含0的排列只有一个标准排列 $12\cdots n$，这样D中不可能为0的项只有一项 $(-1)^ta_{11}a_{22}\cdots a_{nn}$ ，其逆序数为0，所以$D=a_{11}a_{22}\cdots a_{nn}$。    </p>
 
       
