@@ -88,7 +88,7 @@
 <meta property="og:description" content="线性代数–行列式这门课的笔记是由学校的朱军老师授课加上Gilbert Strong老师的视频为主，学堂在线的马辉老师的课后习题为辅的。主要是记录学习过程。      提问： 一个3阶行列式有多少种排列方法，如果是n阶呢？ 答案 6种，即123， 132， 231， 213， 312， 321 n!种">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="d:/Blog/hexo/public/images/picture1.1.jpg">
-<meta property="og:updated_time" content="2019-04-14T02:30:01.788Z">
+<meta property="og:updated_time" content="2019-04-14T03:34:00.570Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性代数之行列式（1）">
 <meta name="twitter:description" content="线性代数–行列式这门课的笔记是由学校的朱军老师授课加上Gilbert Strong老师的视频为主，学堂在线的马辉老师的课后习题为辅的。主要是记录学习过程。      提问： 一个3阶行列式有多少种排列方法，如果是n阶呢？ 答案 6种，即123， 132， 231， 213， 312， 321 n!种">
@@ -365,7 +365,7 @@
 <h2 id="123：0，-231：2，-213：1，-312：2，-321：3"><a href="#123：0，-231：2，-213：1，-312：2，-321：3" class="headerlink" title="123：0， 231：2， 213：1， 312：2， 321：3     "></a>123：0， 231：2， 213：1， 312：2， 321：3     </h2><h2 id="逆序数"><a href="#逆序数" class="headerlink" title="逆序数"></a>逆序数</h2><ul>
 <li>定义： 一个排列中所有逆序的总数称为这个排列的逆序数，记为t  </li>
 <li><p>计算方法： 向前取大法<br>例1:  求排列642315的逆序数。<br>解： </p>
-<p> ||6|4|2|3|1|5|<br> |–|–|–|–|–|–|–|<br> |t|0|1|2|2|4|1|<br> 则整个排列的逆序 t=0+1+2+2+4+1=10</p>
+<p> |6|4|2|3|1|5|<br> |–|–|–|–|–|–|–|<br> |t|0|1|2|2|4|1|<br> 则整个排列的逆序 t=0+1+2+2+4+1=10</p>
 </li>
 </ul>
 <hr>
@@ -527,6 +527,16 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/MeetLiren" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -697,7 +707,7 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -750,6 +760,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 

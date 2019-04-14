@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="矩阵的概念 矩阵是由m行，n列元素构成的列表  $$A=\begin{pmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n}\\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n}\\ \vdots &amp;amp; \vdots &amp;amp;        &amp;amp; \vdots\\ a_{n1} &amp;amp;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-14T02:31:06.179Z">
+<meta property="og:updated_time" content="2019-04-14T03:27:42.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性代数之矩阵（1）">
 <meta name="twitter:description" content="矩阵的概念 矩阵是由m行，n列元素构成的列表  $$A=\begin{pmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n}\\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n}\\ \vdots &amp;amp; \vdots &amp;amp;        &amp;amp; \vdots\\ a_{n1} &amp;amp;">
@@ -360,27 +360,27 @@
 <ol start="2">
 <li>一些特殊矩阵</li>
 </ol>
-<p>行矩阵$A=\begin{pmatrix}a_{1} &amp; a_{1} &amp; \cdots &amp; a_{n}\\end{pmatrix}_{1 \times n}$</p>
-<p>列矩阵$B=\begin{pmatrix}a_{11} \a_{21} \\vdots \a_{n1} \\end{pmatrix}_{m \times 1}$</p>
-<p>零矩阵$O=\begin{pmatrix} 0 \\end{pmatrix}_{m \times n}$   </p>
-<p>方矩阵$m=n, D=\begin{pmatrix}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\vdots &amp; \vdots &amp;        &amp; \vdots\a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\end{pmatrix}_{n \times n}$</p>
+<p>行矩阵    $A=\begin{pmatrix}a_1 &amp; a_{1} &amp; \cdots &amp; a_{n}\\end{pmatrix}_{1 \times n}$</p>
+<p>列矩阵    $B=\begin{pmatrix}a_{11} \\a_{21} \\\vdots \\a_{n1} \\\end{pmatrix}_{m \times 1}$</p>
+<p>零矩阵    $O=\begin{pmatrix} 0 \\end{pmatrix}_{m \times n}$   </p>
+<p>方矩阵<br>$m=n, D=\begin{pmatrix}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\\vdots &amp; \vdots &amp;        &amp; \vdots\\a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\end{pmatrix}_{n \times n}$</p>
 <ol start="3">
 <li>矩阵的相等     </li>
 </ol>
-<p>$A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times n}$, 且$B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{m \times n}$满足 $a</em>{ij} = b_{ij}, \forall i\cdot j$ ,可得$A= B$   </p>
+<p>$A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times n}$, 且 $B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{m \times n}$ 满足 $a</em>{ij} = b_{ij}, \forall i\cdot j$ ,可得 $A=B$   </p>
 <hr>
 <h2 id="矩阵的运算"><a href="#矩阵的运算" class="headerlink" title="矩阵的运算"></a>矩阵的运算</h2><ol>
 <li>加法</li>
 </ol>
-<p>$A+B$ ; 若 $A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times n}$, $B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{m \times n}$, 则 $A+B = A=\begin{pmatrix}a</em>{ij} + b_{ij}\\end{pmatrix}_{m \times n}$</p>
+<p>$A+B$ ; 若 $A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times n}$ , $B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{m \times n}$ , 则 $A+B = A=\begin{pmatrix}a</em>{ij} + b_{ij}\\end{pmatrix}_{m \times n}$</p>
 <ol start="2">
 <li>数乘  $k \cdot A$</li>
 </ol>
-<p>$k A=\begin{pmatrix}ka_{ij}\\end{pmatrix}_{m \times n}$</p>
+<p>$kA=\begin{pmatrix}ka_{ij}\\end{pmatrix}_{m \times n}$</p>
 <ol start="3">
 <li>乘法</li>
 </ol>
-<p>若 $A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times s}, B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{s \times n}$, 则 $A</em>{m \times s} \cdot B_{s \times n}=C_{m \times n}=\begin{pmatrix}c_{ij}\\end{pmatrix}<em>{m \times n}$<br>而$c</em>{ij}=a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj}$    </p>
+<p>若 $A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times s}, B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{s \times n}$ , 则 $A</em>{m \times s} \cdot B_{s \times n}=C_{m \times n}=\begin{pmatrix}c_{ij}\\end{pmatrix}<em>{m \times n}$<br>而 $c</em>{ij}=a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj}$    </p>
 <hr>
 <h2 id="矩阵的性质"><a href="#矩阵的性质" class="headerlink" title="矩阵的性质"></a>矩阵的性质</h2><ol>
 <li>$(AB)C=A(BC)$</li>
@@ -390,7 +390,7 @@
 <li>单位矩阵 $E_n$, $E_nA-AE_n=A$</li>
 </ol>
 <hr>
-<h2 id="矩阵的转置"><a href="#矩阵的转置" class="headerlink" title="矩阵的转置"></a>矩阵的转置</h2><p>将 $m \times n$ 阶矩阵A的行换成同序数的列，得到的 $m \times n$的矩阵，称此矩阵为矩阵A的转置矩阵，记作 $A^T$，即 $A=(a_{ij})<em>{m \times n}$, 则$A^T=(a</em>{ji})_{n \times m}$或写作   </p>
+<h2 id="矩阵的转置"><a href="#矩阵的转置" class="headerlink" title="矩阵的转置"></a>矩阵的转置</h2><p>将 $m \times n$ 阶矩阵A的行换成同序数的列，得到的 $m \times n$ 的矩阵，称此矩阵为矩阵A的转置矩阵，记作 $A^T$ ，即 $A=(a_{ij})<em>{m \times n}$ , 则 $A^T=(a</em>{ji})_{n \times m}$ 或写作   </p>
 <p>$$<br>A=\begin{pmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mm}\\<br>\end{pmatrix},<br>A^T=\begin{pmatrix}<br> a_{11} &amp; a_{21} &amp; \cdots &amp; a_{m1}\\<br> a_{12} &amp; a_{22} &amp; \cdots &amp; a_{m2}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{1n} &amp; a_{2n} &amp; \cdots &amp; a_{mn}\\<br>\end{pmatrix}<br>$$    </p>
 <p>关于矩阵的转置，有下述的性质：    </p>
 <ol>
@@ -399,16 +399,16 @@
 <li>$(kA)^T=KA^T$</li>
 <li>$(AB)^T=B^TA^T$    </li>
 </ol>
-<p>特殊地，设 $A=(a_{ij})_{n \times n}$为n阶方阵，若 $A=A^T$, 称方阵为对称阵。    </p>
+<p>特殊地，设 $A=(a_{ij})_{n \times n}$ 为n阶方阵，若 $A=A^T$ , 称方阵为对称阵。    </p>
 <hr>
 <h2 id="方阵的行列式"><a href="#方阵的行列式" class="headerlink" title="方阵的行列式"></a>方阵的行列式</h2><p>$$<br>A=(a_{ij})=\begin{pmatrix}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br>a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br>\vdots &amp; \vdots &amp;        &amp; \vdots\\<br>a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{pmatrix},<br>则<br>det(A)=\begin{vmatrix}A\end{vmatrix}=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}<br>$$     </p>
 <p>方阵的行列式满足以下性质</p>
 <ol>
 <li>$\begin{vmatrix} A^T \end{vmatrix}=\begin{vmatrix} A \end{vmatrix}$</li>
 <li>$\begin{vmatrix} kA \end{vmatrix}=k^n\begin{vmatrix} A \end{vmatrix}$</li>
-<li>若A,B均为n阶方阵，则$\begin{vmatrix} AB \end{vmatrix}=\begin{vmatrix} BA\end{vmatrix}=\begin{vmatrix} A \end{vmatrix}\begin{vmatrix} B \end{vmatrix}$    </li>
+<li>若A,B均为n阶方阵，则 $\begin{vmatrix} AB \end{vmatrix}=\begin{vmatrix} BA\end{vmatrix}=\begin{vmatrix} A \end{vmatrix}\begin{vmatrix} B \end{vmatrix}$    </li>
 </ol>
-<p>特殊地，将方阵A的代数余子式再转置后得到 $A^<em>$, 称为A的伴随矩阵，并有 $AA^</em>=A^*A=\begin{vmatrix} A \end{vmatrix}E_n$    </p>
+<p>特殊地，将方阵A的代数余子式再转置后得到 $A^<em>$, 称为A的伴随矩阵，并有$AA^</em>=A^*A=\begin{vmatrix} A \end{vmatrix}E_n$    </p>
 <hr>
 <h2 id="矩阵的分块法"><a href="#矩阵的分块法" class="headerlink" title="矩阵的分块法"></a>矩阵的分块法</h2><p>矩阵分块原则：用一些穿透矩阵的直线将矩阵分成若干块，其中每一小块称“子块”</p>
 
@@ -562,6 +562,16 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/MeetLiren" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -732,7 +742,7 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -785,6 +795,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 

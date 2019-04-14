@@ -88,7 +88,7 @@
 <meta property="og:description" content="线性代数——行列式的性质性质1     行列式与其转置行列式相等$(D=D^T)$.根据行列式的定义$D=\sum(-1)^tb_{1p_{1}}b_{2p_{2}}\cdots b_{np_{n}}=\sum(-1)^ta_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}=D$">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="d:/Blog/hexo/public/images/20190310.jpg">
-<meta property="og:updated_time" content="2019-04-14T02:30:25.506Z">
+<meta property="og:updated_time" content="2019-04-14T03:32:31.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性代数之行列式（2）">
 <meta name="twitter:description" content="线性代数——行列式的性质性质1     行列式与其转置行列式相等$(D=D^T)$.根据行列式的定义$D=\sum(-1)^tb_{1p_{1}}b_{2p_{2}}\cdots b_{np_{n}}=\sum(-1)^ta_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}=D$">
@@ -360,15 +360,15 @@
 <h2 id="性质2-行列式中交换两行（列），行列式改变符号"><a href="#性质2-行列式中交换两行（列），行列式改变符号" class="headerlink" title="性质2    行列式中交换两行（列），行列式改变符号."></a>性质2    行列式中交换两行（列），行列式改变符号.</h2><p>$D_1=-D  (r_{i}\leftrightarrow r_{j} or c_{i}\leftrightarrow c_{j})$</p>
 <h2 id="推论1：行列式中两行（列）元素对应相等，行列式为0"><a href="#推论1：行列式中两行（列）元素对应相等，行列式为0" class="headerlink" title="推论1：行列式中两行（列）元素对应相等，行列式为0."></a>推论1：行列式中两行（列）元素对应相等，行列式为0.</h2><p>证 互换元素相同的两行，利用性质2，此时有$D=-D$,所以$D=0$.    </p>
 <hr>
-<h2 id="性质3-行列式中若某行（列）元素有公因子k-则此k可提出行列式外（公因子性质）"><a href="#性质3-行列式中若某行（列）元素有公因子k-则此k可提出行列式外（公因子性质）" class="headerlink" title="性质3   行列式中若某行（列）元素有公因子k,则此k可提出行列式外（公因子性质）"></a>性质3   行列式中若某行（列）元素有公因子k,则此k可提出行列式外（公因子性质）</h2><p>$$D=<br>\begin{vmatrix}<br> ka_{11} &amp; ka_{12} &amp; \cdots &amp; ka_{1n}\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\<br>\end{vmatrix}=<br>k\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\<br> \end{vmatrix}<br>$$    </p>
-<h2 id="推论2：-行列式中若两行（列）元素相应成比例，则行列式为0"><a href="#推论2：-行列式中若两行（列）元素相应成比例，则行列式为0" class="headerlink" title="推论2： 行列式中若两行（列）元素相应成比例，则行列式为0"></a>推论2： 行列式中若两行（列）元素相应成比例，则行列式为0</h2><p>证 若$\frac{a_{i1}}{a_{j1}} = \frac{a_{i2}}{a_{j2}} = \cdots=k$,将对应的k提出行列式外后，则必有两行（列）元素相等，根据推论1，行列式为0.    </p>
+<h2 id="性质3-行列式中若某行（列）元素有公因子k-则此k可提出行列式外（公因子性质）"><a href="#性质3-行列式中若某行（列）元素有公因子k-则此k可提出行列式外（公因子性质）" class="headerlink" title="性质3   行列式中若某行（列）元素有公因子k,则此k可提出行列式外（公因子性质）"></a>性质3   行列式中若某行（列）元素有公因子k,则此k可提出行列式外（公因子性质）</h2><p>$$D=<br>\begin{vmatrix}<br> ka_{11} &amp; ka_{12} &amp; \cdots &amp; ka_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}=<br>k\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br> \end{vmatrix}<br>$$    </p>
+<h2 id="推论2：-行列式中若两行（列）元素相应成比例，则行列式为0"><a href="#推论2：-行列式中若两行（列）元素相应成比例，则行列式为0" class="headerlink" title="推论2： 行列式中若两行（列）元素相应成比例，则行列式为0"></a>推论2： 行列式中若两行（列）元素相应成比例，则行列式为0</h2><p>证 若 $\frac{a_{i1}}{a_{j1}} = \frac{a_{i2}}{a_{j2}} = \cdots=k$,将对应的k提出行列式外后，则必有两行（列）元素相等，根据推论1，行列式为0.    </p>
 <hr>
-<h2 id="性质4-行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式"><a href="#性质4-行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式" class="headerlink" title="性质4   行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式"></a>性质4   行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式</h2><p>$$D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12}+b_{11} &amp; \cdots &amp; a_{1n}\<br> a_{21} &amp; a_{22}+b_{22} &amp; \cdots &amp; a_{2n}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; a_{n2}+b_{33} &amp; \cdots &amp; a_{nn}\<br>\end{vmatrix}=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\<br> \end{vmatrix}+<br> \begin{vmatrix}<br> a_{11} &amp; b_{12} &amp; \cdots &amp; a_{1n}\<br> a_{21} &amp; b_{22} &amp; \cdots &amp; a_{2n}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; b_{n2} &amp; \cdots &amp; a_{nn}\<br> \end{vmatrix}<br>$$    </p>
+<h2 id="性质4-行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式"><a href="#性质4-行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式" class="headerlink" title="性质4   行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式"></a>性质4   行列式中若某行（列）元素由两行（列）元素相加而成，则行列式可分裂成两个行列式</h2><p>$$D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12}+b_{11} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22}+b_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2}+b_{33} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br> \end{vmatrix}+<br> \begin{vmatrix}<br> a_{11} &amp; b_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; b_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; b_{n2} &amp; \cdots &amp; a_{nn}\\<br> \end{vmatrix}<br>$$    </p>
 <hr>
-<h2 id="性质5-（行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变"><a href="#性质5-（行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变" class="headerlink" title="性质5   （行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变"></a>性质5   （行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变</h2><p>$$D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\<br> \vdots &amp; \vdots        &amp;        &amp; \vdots\<br> a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{j1} &amp; a_{j2} &amp; \cdots &amp; a_{jn}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\<br>\end{vmatrix}=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\<br> \vdots &amp; \vdots        &amp;        &amp; \vdots\<br> a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{j1}+ka_{i1} &amp; a_{j2}+ka_{i2} &amp; \cdots &amp; a_{jn}+ka_{in}\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\<br>\end{vmatrix}<br>$$<br>利用性质4把两个行列式分裂之后，其中有一个行列式中某两行元素相等，即为0，则原行列式的值没有改变。    </p>
+<h2 id="性质5-（行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变"><a href="#性质5-（行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变" class="headerlink" title="性质5   （行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变"></a>性质5   （行列式的等值交换）行列式中若将某行（列）元素k倍后加到另一行（列）相应元素上，行列式值不变</h2><p>$$D=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> \vdots &amp; \vdots        &amp;        &amp; \vdots\\<br> a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{j1} &amp; a_{j2} &amp; \cdots &amp; a_{jn}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> \vdots &amp; \vdots        &amp;        &amp; \vdots\\<br> a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{j1}+ka_{i1} &amp; a_{j2}+ka_{i2} &amp; \cdots &amp; a_{jn}+ka_{in}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}<br>$$<br>利用性质4把两个行列式分裂之后，其中有一个行列式中某两行元素相等，即为0，则原行列式的值没有改变。    </p>
 <hr>
 <h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>目前的行列式计算都可以利用以上行列式的性质以及推论进行计算。值得一提的是，上一节思考里提到的三角形行列式可以运用到行列式的计算中。并且，三角形行列式的思路一直贯穿。     </p>
-<p>例1 计算行列式$D=\begin{vmatrix} 3 &amp; 1 &amp; -1 &amp; 2\-5 &amp; 1 &amp; 3 &amp; -4\2 &amp; 0 &amp; 1 &amp; -1\1 &amp; -5 &amp; 3 &amp; -3 \end{vmatrix}$     </p>
+<p>例1 计算行列式$D=\begin{vmatrix} 3 &amp; 1 &amp; -1 &amp; 2\\-5 &amp; 1 &amp; 3 &amp; -4\\2 &amp; 0 &amp; 1 &amp; -1\\1 &amp; -5 &amp; 3 &amp; -3 \\\end{vmatrix}$     </p>
 <p><img src="D:\Blog\hexo\public\images\20190310.jpg" alt="avatar"></p>
 
       
@@ -521,6 +521,16 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/MeetLiren" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -691,7 +701,7 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -744,6 +754,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
