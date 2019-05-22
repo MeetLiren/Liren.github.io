@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="矩阵的概念 矩阵是由m行，n列元素构成的列表  $$A=\begin{pmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n}\\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n}\\ \vdots &amp;amp; \vdots &amp;amp;        &amp;amp; \vdots\\ a_{n1} &amp;amp;">
+<meta name="description" content="向量组向量组定义由若干个向量构成的集合，记为 $\vec{a}$ : $\vec{a_1},\vec{a_2},\cdots ,\vec{a_m}$;其中，$\vec{a_1}$均为 n 维向量">
 <meta name="keywords" content="Math">
 <meta property="og:type" content="article">
-<meta property="og:title" content="线性代数之矩阵（1）">
-<meta property="og:url" content="http://yoursite.com/2019/03/24/线性代数之矩阵（1）/index.html">
+<meta property="og:title" content="向量组的线性相关性(1)">
+<meta property="og:url" content="http://yoursite.com/2019/05/22/向量组的线性相关性(1)/index.html">
 <meta property="og:site_name" content="Liren&#39;s Blog">
-<meta property="og:description" content="矩阵的概念 矩阵是由m行，n列元素构成的列表  $$A=\begin{pmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n}\\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n}\\ \vdots &amp;amp; \vdots &amp;amp;        &amp;amp; \vdots\\ a_{n1} &amp;amp;">
+<meta property="og:description" content="向量组向量组定义由若干个向量构成的集合，记为 $\vec{a}$ : $\vec{a_1},\vec{a_2},\cdots ,\vec{a_m}$;其中，$\vec{a_1}$均为 n 维向量">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-20T09:40:19.117Z">
+<meta property="og:updated_time" content="2019-05-22T11:54:44.651Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="线性代数之矩阵（1）">
-<meta name="twitter:description" content="矩阵的概念 矩阵是由m行，n列元素构成的列表  $$A=\begin{pmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n}\\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n}\\ \vdots &amp;amp; \vdots &amp;amp;        &amp;amp; \vdots\\ a_{n1} &amp;amp;">
+<meta name="twitter:title" content="向量组的线性相关性(1)">
+<meta name="twitter:description" content="向量组向量组定义由若干个向量构成的集合，记为 $\vec{a}$ : $\vec{a_1},\vec{a_2},\cdots ,\vec{a_m}$;其中，$\vec{a_1}$均为 n 维向量">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/24/线性代数之矩阵（1）/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/22/向量组的线性相关性(1)/">
 
 
 
 
 
-  <title>线性代数之矩阵（1） | Liren's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>向量组的线性相关性(1) | Liren's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/24/线性代数之矩阵（1）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/22/向量组的线性相关性(1)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Liren">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">线性代数之矩阵（1）</h1>
+          <h1 class="post-title" itemprop="name headline">向量组的线性相关性(1)</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-24T10:04:50+08:00">
-                2019-03-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-22T13:25:54+08:00">
+                2019-05-22
               </time>
             
 
@@ -352,65 +352,25 @@
       
 
       
-        <h2 id="矩阵的概念"><a href="#矩阵的概念" class="headerlink" title="矩阵的概念"></a>矩阵的概念</h2><ol>
-<li>矩阵是由m行，n列元素构成的列表</li>
-</ol>
-<p>$$<br>A=<br>\begin{pmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{pmatrix}<br>=(a_{ij})_{m \times n}<br>$$    </p>
+        <h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><h3 id="向量组定义"><a href="#向量组定义" class="headerlink" title="向量组定义"></a>向量组定义</h3><p>由若干个向量构成的集合，记为 $\vec{a}$ : $\vec{a_1},\vec{a_2},\cdots ,\vec{a_m}$;其中，$\vec{a_1}$均为 n 维向量    </p>
 <a id="more"></a>
-<ol start="2">
-<li>一些特殊矩阵</li>
+<h3 id="向量组与矩阵的关系"><a href="#向量组与矩阵的关系" class="headerlink" title="向量组与矩阵的关系"></a>向量组与矩阵的关系</h3><p>$$<br>\vec{a}:<br>\vec{a_1}=\begin{pmatrix}<br>a_{11} \\<br>a_{21} \\<br>\vdots \\<br>a_{n1} \\<br>\end{pmatrix},<br>\vec{a_2}=\begin{pmatrix}<br>a_{12} \\<br>a_{22} \\<br>\vdots \\<br>a_{n2} \\<br>\end{pmatrix},<br>\cdots,<br>\vec{a_m}=\begin{pmatrix}<br>a_{1m} \\<br>a_{2m} \\<br>\vdots \\<br>a_{nm} \\<br>\end{pmatrix}<br>\leftrightarrow<br>A=(\vec{a_1},\vec{a_2},\cdots ,\vec{a_m})<br>=\begin{pmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1m} \\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2m} \\<br> \vdots &amp; \vdots &amp;        &amp; \vdots \\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nm} \\<br>\end{pmatrix}<br>$$      </p>
+<h3 id="运算-线性运算"><a href="#运算-线性运算" class="headerlink" title="运算(线性运算)"></a>运算(线性运算)</h3><ol>
+<li><p>$\vec{a} + \vec{b} = \begin{pmatrix}a_{1} \\a_{2} \\\vdots \\a_{n} \\\end{pmatrix} + \begin{pmatrix}b_{1} \\b_{2} \\\vdots \\b_{n} \\\end{pmatrix}=\begin{pmatrix}a_{1}+b_{1} \\a_{2}+b_{2} \\\vdots \\a_{n}+b_{n} \\\end{pmatrix}$ </p>
+</li>
+<li><p>$k\vec{a}=k\begin{pmatrix}a_{1} \\a_{2} \\\vdots \\a_{n} \\\end{pmatrix}=\begin{pmatrix}ka_{1} \\ka_{2} \\\vdots \\ka_{n} \\\end{pmatrix}$    </p>
+</li>
 </ol>
-<p>行矩阵    $A=\begin{pmatrix}a_1 &amp; a_{1} &amp; \cdots &amp; a_{n}\\\end{pmatrix}_{1 \times n}$</p>
-<p>列矩阵    $B=\begin{pmatrix}a_{11} \\a_{21} \\\vdots \\a_{n1} \\\end{pmatrix}_{m \times 1}$</p>
-<p>零矩阵    $O=\begin{pmatrix} 0 \\\end{pmatrix}_{m \times n}$   </p>
-<p>方矩阵<br>$m=n, D=\begin{pmatrix}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\\vdots &amp; \vdots &amp;        &amp; \vdots\\a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\\end{pmatrix}_{n \times n}$</p>
-<ol start="3">
-<li>矩阵的相等     </li>
-</ol>
-<p>$A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times n}$, 且 $B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{m \times n}$ 满足 $a</em>{ij} = b_{ij}, \forall i\cdot j$ ,可得 $A=B$   </p>
-<hr>
-<h2 id="矩阵的运算"><a href="#矩阵的运算" class="headerlink" title="矩阵的运算"></a>矩阵的运算</h2><ol>
-<li>加法</li>
-</ol>
-<p>$A+B$ ; 若 $A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times n}$ , $B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{m \times n}$ , 则 $A+B = A=\begin{pmatrix}a</em>{ij} + b_{ij}\\end{pmatrix}_{m \times n}$</p>
-<ol start="2">
-<li>数乘  $k \cdot A$</li>
-</ol>
-<p>$kA=\begin{pmatrix}ka_{ij}\\end{pmatrix}_{m \times n}$</p>
-<ol start="3">
-<li>乘法</li>
-</ol>
-<p>若 $A=\begin{pmatrix}a_{ij}\\end{pmatrix}<em>{m \times s}, B=\begin{pmatrix}b</em>{ij}\\end{pmatrix}<em>{s \times n}$ , 则 $A</em>{m \times s} \cdot B_{s \times n}=C_{m \times n}=\begin{pmatrix}c_{ij}\\end{pmatrix}<em>{m \times n}$<br>而 $c</em>{ij}=a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj}$    </p>
-<hr>
-<h2 id="矩阵的性质"><a href="#矩阵的性质" class="headerlink" title="矩阵的性质"></a>矩阵的性质</h2><ol>
-<li>$(AB)C=A(BC)$</li>
-<li>$A \cdot k \cdot B= kAB$</li>
-<li>$A(B+C)=AB+AC$</li>
-<li>$(B+C)A=BA+CA$</li>
-<li>单位矩阵 $E_n$, $E_nA-AE_n=A$</li>
-</ol>
-<hr>
-<h2 id="矩阵的转置"><a href="#矩阵的转置" class="headerlink" title="矩阵的转置"></a>矩阵的转置</h2><p>将 $m \times n$ 阶矩阵A的行换成同序数的列，得到的 $m \times n$ 的矩阵，称此矩阵为矩阵A的转置矩阵，记作 $A^T$ ，即 $A=(a_{ij})<em>{m \times n}$ , 则 $A^T=(a</em>{ji})_{n \times m}$ 或写作   </p>
-<p>$$<br>A=\begin{pmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mm}\\<br>\end{pmatrix},<br>A^T=\begin{pmatrix}<br> a_{11} &amp; a_{21} &amp; \cdots &amp; a_{m1}\\<br> a_{12} &amp; a_{22} &amp; \cdots &amp; a_{m2}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{1n} &amp; a_{2n} &amp; \cdots &amp; a_{mn}\\<br>\end{pmatrix}<br>$$    </p>
-<p>关于矩阵的转置，有下述的性质：    </p>
-<ol>
-<li>$(A^T)^T=A$</li>
-<li>$(A+B)^T=A^T+B^T$</li>
-<li>$(kA)^T=KA^T$</li>
-<li>$(AB)^T=B^TA^T$    </li>
-</ol>
-<p>特殊地，设 $A=(a_{ij})_{n \times n}$ 为n阶方阵，若 $A=A^T$ , 称方阵为对称阵。    </p>
-<hr>
-<h2 id="方阵的行列式"><a href="#方阵的行列式" class="headerlink" title="方阵的行列式"></a>方阵的行列式</h2><p>$$<br>A=(a_{ij})=\begin{pmatrix}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br>a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br>\vdots &amp; \vdots &amp;        &amp; \vdots\\<br>a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{pmatrix},<br>则<br>det(A)=\begin{vmatrix}A\end{vmatrix}=<br>\begin{vmatrix}<br> a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br> a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br> \vdots &amp; \vdots &amp;        &amp; \vdots\\<br> a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\<br>\end{vmatrix}<br>$$     </p>
-<p>方阵的行列式满足以下性质</p>
-<ol>
-<li>$\begin{vmatrix} A^T \\\end{vmatrix}=\begin{vmatrix} A \\\end{vmatrix}$</li>
-<li>$\begin{vmatrix} kA \\\end{vmatrix}=k^n\begin{vmatrix} A \\\end{vmatrix}$</li>
-<li>若A,B均为n阶方阵，则 $\begin{vmatrix} AB \end{vmatrix}=\begin{vmatrix} BA\end{vmatrix}=\begin{vmatrix} A \\\end{vmatrix}\begin{vmatrix} B \\\end{vmatrix}$    </li>
-</ol>
-<p>特殊地，将方阵A的代数余子式再转置后得到 $A^<em>$, 称为A的伴随矩阵，并有$AA^</em>=A^*A=\begin{vmatrix} A \\end{vmatrix}E_n$    </p>
-<hr>
-<h2 id="矩阵的分块法"><a href="#矩阵的分块法" class="headerlink" title="矩阵的分块法"></a>矩阵的分块法</h2><p>矩阵分块原则：用一些穿透矩阵的直线将矩阵分成若干块，其中每一小块称“子块”</p>
+<h2 id="向量组及其线性关系"><a href="#向量组及其线性关系" class="headerlink" title="向量组及其线性关系"></a>向量组及其线性关系</h2><h3 id="向量的线性表示"><a href="#向量的线性表示" class="headerlink" title="向量的线性表示"></a>向量的线性表示</h3><p>$\vec{a}:\vec{a_1},\vec{a_2},\cdots,\vec{a_m}$ (n维向量组)，若 $\vec{b}$ 也是n维向量，若 $\vec{b}=k_1\vec{a_1}+k_2\vec{a_2}+\cdots +k_m\vec{a_m}$, 称 $\vec{b}$ 可由 $\vec{a}$ 组线性表示    </p>
+<h4 id="线性表示的结论"><a href="#线性表示的结论" class="headerlink" title="线性表示的结论"></a>线性表示的结论</h4><p>$\vec{b}=x_1\vec{a_1}+x_2\vec{x_2}+\cdots +x_m\vec{a_m}$ (线性方程组) </p>
+<p>$$<br>\begin{pmatrix}b_{1} \\<br>b_{2} \\<br>\vdots \\<br>b_{n} \\<br>\end{pmatrix}<br>=x_1\begin{pmatrix}a_{11} \\<br>a_{21} \\<br>\vdots \\<br>a_{n1} \\<br>\end{pmatrix} +<br>x_2\begin{pmatrix}a_{21} \\<br>a_{22} \\<br>\vdots \\<br>a_{n2} \\<br>\end{pmatrix} +<br>\cdots +<br>x_m\begin{pmatrix}<br>a_{1m} \\<br>a_{2m} \\<br>\vdots \\<br>a_{nm} \\<br>\end{pmatrix}<br>=\begin{pmatrix}<br>a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n \\<br>a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n \\<br>\vdots \\<br>a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n \\<br>\end{pmatrix}<br>$$<br>定理1：<br>$\vec{b}$ 可由 $\vec{a}$ 组线性表示 $\Longleftrightarrow$ $\vec{b}=x_1\vec{a_1}+x_2\vec{x_2}+\cdots +x_m\vec{a_m}$ 有解 $\Longleftrightarrow$ $r(\vec{a}|\vec{b})=r(\vec{a})$  </p>
+<p>定理2：<br>若 $\vec{a}$ :$\vec{a_1},\vec{a_2},\cdots ,\vec{a_s} \cdots$ (n 维列向量组)<br>$\vec{b}$ : $\vec{b_1},\vec{b_2},\cdots ,\vec{b_i} \cdots$<br>$\vec{b_i} \in \vec{b}$, $\vec{b_i}$ 均可由 $\vec{a}$ 组线性表示，则称：$\vec{b}$ 均可由 $\vec{a}$ 线性表示     </p>
+<p>定理3：<br>若：$\vec{a}$ 组可由 $\vec{b}$ 组线性表示；且 $\vec{b}$ 组也可由 $\vec{a}$ 组线性表示，称 $\vec{a}$ 与 $\vec{b}$ 相互等价，记为 $\vec{a} \thicksim \vec{b}$    </p>
+<h3 id="向量组的线性相关与线性无关"><a href="#向量组的线性相关与线性无关" class="headerlink" title="向量组的线性相关与线性无关"></a>向量组的线性相关与线性无关</h3><p>$\vec{a}$ : $\vec{a_1},\vec{a_2},\cdots ,\vec{a_m} \cdots$ (n 维列向量组)<br>若存在不全为0的 $k_1,k_2,\cdots ,k_m$ 可使 $k_1\vec{a_1}++k_2\vec{a_2}+\cdots +k_m\vec{a_m}=\vec0$,此时称 $\vec{a}$ 组为线性相关的，否则称 $\vec{a}$ 组为线性无关      </p>
+<p>线性无关：若能使 $k_1\vec{a_1}++k_2\vec{a_2}+\cdots +k_m\vec{a_m}=\vec0$，当且仅当 $k_1=k_2=\cdots=k_m=0$</p>
+<h4 id="线性相关、无关的结论"><a href="#线性相关、无关的结论" class="headerlink" title="线性相关、无关的结论"></a>线性相关、无关的结论</h4><p>$\vec{0}=x_1\vec{a_1}+x_2\vec{x_2}+\cdots +x_m\vec{a_m}$ (线性方程组)    </p>
+<p>$$<br>\begin{pmatrix}0 \\<br>0 \\<br>\vdots \\<br>0 \\<br>\end{pmatrix}<br>=x_1\begin{pmatrix}a_{11} \\<br>a_{21} \\<br>\vdots \\<br>a_{n1} \\<br>\end{pmatrix} +<br>x_2\begin{pmatrix}a_{21} \\<br>a_{22} \\<br>\vdots \\<br>a_{n2} \\<br>\end{pmatrix} +<br>\cdots +<br>x_m\begin{pmatrix}<br>a_{1m} \\<br>a_{2m} \\<br>\vdots \\<br>a_{nm} \\<br>\end{pmatrix}<br>=\begin{pmatrix}<br>a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n \\<br>a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n \\<br>\vdots \\<br>a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n \\<br>\end{pmatrix}<br>$$<br>定理：<br>向量组 $\vec{a}：\vec{a_1},\vec{a_2},\cdots ,\vec{a_m}$ 线性相关 $\Longleftrightarrow$ $x_1\vec{a_1}+x_2\vec{x_2}+\cdots +x_m\vec{a_m}=\vec{0}$ (齐次方程) $\Longleftrightarrow$ $r(A)&lt;m$   </p>
+<p>推论：<br>向量组 $\vec{a}：\vec{a_1},\vec{a_2},\cdots ,\vec{a_m}$ 线性无关 $\Longleftrightarrow$ $x_1\vec{a_1}+x_2\vec{x_2}+\cdots +x_m\vec{a_m}=\vec{0}$ 仅有零解 $\Longleftrightarrow$ $r(A)=m$    </p>
 
       
     </div>
@@ -441,8 +401,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/17/线性代数之行列式（3）/" rel="next" title="线性代数之行列式（3）">
-                <i class="fa fa-chevron-left"></i> 线性代数之行列式（3）
+              <a href="/2019/05/19/初等方阵及其应用/" rel="next" title="初等方阵及其应用">
+                <i class="fa fa-chevron-left"></i> 初等方阵及其应用
               </a>
             
           </div>
@@ -451,8 +411,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/14/线性代数之行列式（1）/" rel="prev" title="线性代数之行列式（1）">
-                线性代数之行列式（1） <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/22/new-post/" rel="prev" title="向量组的线性相关性(1)">
+                向量组的线性相关性(1) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -595,7 +555,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的概念"><span class="nav-number">1.</span> <span class="nav-text">矩阵的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的运算"><span class="nav-number">2.</span> <span class="nav-text">矩阵的运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的性质"><span class="nav-number">3.</span> <span class="nav-text">矩阵的性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的转置"><span class="nav-number">4.</span> <span class="nav-text">矩阵的转置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方阵的行列式"><span class="nav-number">5.</span> <span class="nav-text">方阵的行列式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的分块法"><span class="nav-number">6.</span> <span class="nav-text">矩阵的分块法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#向量组"><span class="nav-number">1.</span> <span class="nav-text">向量组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#向量组定义"><span class="nav-number">1.1.</span> <span class="nav-text">向量组定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#向量组与矩阵的关系"><span class="nav-number">1.2.</span> <span class="nav-text">向量组与矩阵的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算-线性运算"><span class="nav-number">1.3.</span> <span class="nav-text">运算(线性运算)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量组及其线性关系"><span class="nav-number">2.</span> <span class="nav-text">向量组及其线性关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#向量的线性表示"><span class="nav-number">2.1.</span> <span class="nav-text">向量的线性表示</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性表示的结论"><span class="nav-number">2.1.1.</span> <span class="nav-text">线性表示的结论</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#向量组的线性相关与线性无关"><span class="nav-number">2.2.</span> <span class="nav-text">向量组的线性相关与线性无关</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性相关、无关的结论"><span class="nav-number">2.2.1.</span> <span class="nav-text">线性相关、无关的结论</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
